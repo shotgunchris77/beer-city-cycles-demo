@@ -370,7 +370,7 @@
 		else if (path === '/checkout') { built = viewCheckout(); }
 		else if ((m = path.match(/^\/order\/(\d+)$/))) { built = viewOrder(m[1]); }
 		else if (path === '/owner') { built = viewOwner(); }
-		else if (!document.querySelector('.sa-view[data-route="' + key + '"]')) { built = viewMissing(); }
+		else if (!Array.prototype.some.call(document.querySelectorAll('.sa-view'), function (v) { return v.getAttribute('data-route') === key; })) { built = viewMissing(); }
 		if (built) { storeSlot.innerHTML = built.html; key = '__store'; }
 		var title = 'Beer City Cycles';
 		document.querySelectorAll('.sa-view').forEach(function (v) {

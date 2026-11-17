@@ -6,7 +6,9 @@ A working demo of the Beer City Cycles website. Choppers and Dynas out of Milwau
 
 The demo runs in WordPress Playground in your browser. Nothing is saved between visits, and it takes about 30 to 60 seconds to load because it installs WordPress and WooCommerce each time.
 
-**Open the standalone copy (no WordPress, loads right away):** https://shotgunchris77.github.io/beer-city-cycles-demo/
+**Open the standalone copy (no WordPress, loads right away):** https://beercitycycles.pplx.app
+
+The same copy is in `docs/` and can also be served by GitHub Pages: repo Settings > Pages > Deploy from a branch > `main` and `/docs`. It then loads at https://shotgunchris77.github.io/beer-city-cycles-demo/
 
 The standalone copy is the same site as plain HTML, CSS and JavaScript, in case Playground will not load. Merch, sizes, cart, USPS shipping, checkout and an owner screen all work, but everything stays in the visitor's browser. Real inventory and real order email need the WordPress version on real hosting.
 
