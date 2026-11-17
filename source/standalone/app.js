@@ -373,6 +373,7 @@
 		else if (!Array.prototype.some.call(document.querySelectorAll('.sa-view'), function (v) { return v.getAttribute('data-route') === key; })) { built = viewMissing(); }
 		if (built) { storeSlot.innerHTML = built.html; key = '__store'; }
 		var title = 'Beer City Cycles';
+		document.body.classList.toggle('home', key === '/');
 		document.querySelectorAll('.sa-view').forEach(function (v) {
 			var on = v.getAttribute('data-route') === key;
 			v.classList.toggle('is-on', on);
