@@ -1,0 +1,51 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "Beer City Cycles - Website Demo",
+    "author": "Beer City Cycles"
+  },
+  "landingPage": "/",
+  "login": true,
+  "preferredVersions": {
+    "php": "8.2",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Beer City Cycles",
+        "blogdescription": "Choppers and Dynas \u00b7 Milwaukee, WI",
+        "permalink_structure": "/%postname%/",
+        "timezone_string": "America/Chicago"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "woocommerce"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "bundled",
+        "path": "/theme.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\nwp_set_current_user( 1 );\n// Demo only: hide the front-end admin bar so the preview looks like the live site.\nupdate_user_meta( 1, 'show_admin_bar_front', 'false' );\nif ( class_exists( 'WC_Install' ) ) {\n\tWC_Install::install(); // make sure the store tables and pages exist before adding merch\n}\n// Pages, the 2027 events, sample merch, store and shipping settings. See inc/seed.php in the theme.\nbcc_seed( true );\n"
+    }
+  ]
+}
