@@ -6,6 +6,10 @@ A working demo of the Beer City Cycles website. Choppers and Dynas out of Milwau
 
 The demo runs in WordPress Playground in your browser. Nothing is saved between visits, and it takes about 30 to 60 seconds to load because it installs WordPress and WooCommerce each time.
 
+**Open the standalone copy (no WordPress, loads right away):** https://shotgunchris77.github.io/beer-city-cycles-demo/
+
+The standalone copy is the same site as plain HTML, CSS and JavaScript, in case Playground will not load. Merch, sizes, cart, USPS shipping, checkout and an owner screen all work, but everything stays in the visitor's browser. Real inventory and real order email need the WordPress version on real hosting.
+
 ## What's inside
 - Home, About, Events & Rides, Merch and Contact pages
 - Events post type for shows, parties and rides (Dashboard > Events & Rides), with the 2027 After Party and Bike Show loaded
@@ -26,3 +30,4 @@ The demo runs in WordPress Playground in your browser. Nothing is saved between 
 - Shipping prices are the USPS retail tables in `source/beer-city-cycles/data/usps-rates.json`. Update that file when USPS changes prices. U.S. addresses only.
 - The shop email and Instagram link are under Settings > Beer City.
 - `beer-city-cycles-demo.zip` holds `blueprint.json` and `theme.zip`. Editable source is in `source/`.
+- `docs/` is the standalone copy that GitHub Pages serves. Its store script and extra styles are in `source/standalone/`.

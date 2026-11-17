@@ -58,7 +58,7 @@ mark.has-gold-color { color: var(--bcc-gold); }
 
 /* ---------- Header ---------- */
 .bcc-site-header { position: sticky; top: 0; z-index: 50; }
-.bcc-header { background: rgba(0, 0, 0, 0.94); border-bottom: 1px solid var(--bcc-line); padding-top: 0.55rem; padding-bottom: 0.55rem; backdrop-filter: blur(6px); }
+.bcc-header { background: #000; border-bottom: 1px solid var(--bcc-line); padding-top: 0.55rem; padding-bottom: 0.55rem; }
 .bcc-header-row { gap: 1rem; }
 .bcc-header-logo { margin: 0; flex: none; }
 .bcc-header-logo img { display: block; border-radius: 50%; }
