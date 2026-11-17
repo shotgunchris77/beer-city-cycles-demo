@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'BCC_VERSION', '1.0.0' );
+define( 'BCC_VERSION', '1.1.0' );
 
 function bcc_setup() {
 	add_theme_support( 'wp-block-styles' );

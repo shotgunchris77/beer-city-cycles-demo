@@ -8,13 +8,9 @@
 ?>
 <!-- wp:group {"align":"full","className":"bcc-hero","layout":{"type":"constrained","contentSize":"1240px"}} -->
 <div class="wp-block-group alignfull bcc-hero"><!-- wp:columns {"verticalAlignment":"center","className":"bcc-hero-cols"} -->
-<div class="wp-block-columns are-vertically-aligned-center bcc-hero-cols"><!-- wp:column {"verticalAlignment":"center","width":"54%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:54%"><!-- wp:paragraph {"className":"bcc-script"} -->
-<p class="bcc-script">Milwaukee, Wisconsin</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":1,"className":"bcc-hero-title"} -->
-<h1 class="wp-block-heading bcc-hero-title">Party.<br>Drink Beer.<br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-gold-color">Put Down Miles.</mark></h1>
+<div class="wp-block-columns are-vertically-aligned-center bcc-hero-cols"><!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%"><!-- wp:heading {"level":1,"className":"bcc-hero-title"} -->
+<h1 class="wp-block-heading bcc-hero-title">Party.<br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-blaze-color">Drink Beer.</mark><br>Put Down Miles.</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"bcc-lede"} -->
@@ -32,17 +28,23 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"46%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:46%"><!-- wp:image {"sizeSlug":"full","className":"bcc-hero-logo"} -->
+<!-- wp:column {"verticalAlignment":"center","width":"33%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33%"><!-- wp:image {"sizeSlug":"full","className":"bcc-hero-logo"} -->
 <figure class="wp-block-image size-full bcc-hero-logo"><img src="<?php echo esc_url( bcc_img( 'logo.jpg' ) ); ?>" alt="Beer City Cycles logo: Premium Choppers, Milwaukee, WI"/></figure>
 <!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"27%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:27%"><!-- wp:shortcode -->
+[bcc_bill count="2"]
+<!-- /wp:shortcode --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","className":"bcc-strip","layout":{"type":"constrained","contentSize":"1240px"}} -->
 <div class="wp-block-group alignfull bcc-strip"><!-- wp:paragraph {"className":"bcc-strip-text"} -->
-<p class="bcc-strip-text">Choppers <span>/</span> Dynas <span>/</span> Cold Beer <span>/</span> Long Miles <span>/</span> Milwaukee, WI</p>
+<p class="bcc-strip-text"><b>Ride it in.</b> <span>★</span> <b>Park it.</b> <span>★</span> <b>Grab a plate.</b> <span>★</span> <b>Stay for one more.</b></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

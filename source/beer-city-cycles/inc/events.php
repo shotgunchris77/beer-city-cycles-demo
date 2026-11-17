@@ -235,6 +235,25 @@ function bcc_events_shortcode( $atts ) {
 }
 add_shortcode( 'bcc_events', 'bcc_events_shortcode' );
 
+/**
+ * "On The Bill" box for the home page: the next few dated events as a show bill.
+ */
+function bcc_bill_shortcode( $atts ) {
+	$atts   = shortcode_atts( array( 'count' => 2 ), $atts );
+	$events = bcc_get_events( array( 'count' => (int) $atts['count'] ) );
+	$out    = '<div class="bcc-bill"><div class="bcc-bill-in"><p class="bcc-bill-title">On The Bill</p>';
+	foreach ( $events as $ev ) {
+		$d     = get_post_meta( $ev->ID, 'bcc_date', true );
+		$venue = get_post_meta( $ev->ID, 'bcc_venue', true );
+		$start = bcc_fmt_time( get_post_meta( $ev->ID, 'bcc_start', true ) );
+		$where = trim( $venue . ( $venue && $start ? ', ' : '' ) . $start );
+		$out  .= '<a class="bcc-bill-row" href="' . esc_url( get_permalink( $ev ) ) . '"><span class="d">' . esc_html( bcc_fmt_date( $d, 'M j' ) ) . '</span><span class="n">' . esc_html( get_the_title( $ev ) ) . '</span>' . ( $where ? '<span class="w">' . esc_html( $where ) . '</span>' : '' ) . '</a>';
+	}
+	$out .= '<a class="bcc-bill-row" href="' . esc_url( bcc_instagram_url() ) . '" target="_blank" rel="noopener"><span class="n">Pop up rides</span><span class="w">Announced on Instagram ' . esc_html( bcc_instagram_handle() ) . '</span></a>';
+	return $out . '</div></div>';
+}
+add_shortcode( 'bcc_bill', 'bcc_bill_shortcode' );
+
 function bcc_event_single_shortcode() {
 	$id = get_queried_object_id();
 	if ( ! $id || 'bcc_event' !== get_post_type( $id ) ) {

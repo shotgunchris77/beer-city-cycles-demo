@@ -4,34 +4,107 @@
   "settings": {
     "appearanceTools": true,
     "useRootPaddingAwareAlignments": true,
-    "layout": { "contentSize": "760px", "wideSize": "1240px" },
+    "layout": {
+      "contentSize": "760px",
+      "wideSize": "1240px"
+    },
     "color": {
       "defaultPalette": false,
       "defaultGradients": false,
       "defaultDuotone": false,
       "palette": [
-        { "slug": "black", "color": "#000000", "name": "Black" },
-        { "slug": "coal", "color": "#0F0E0C", "name": "Coal" },
-        { "slug": "iron", "color": "#1B1915", "name": "Iron" },
-        { "slug": "smoke", "color": "#322D25", "name": "Smoke" },
-        { "slug": "cream", "color": "#F2E8D2", "name": "Cream" },
-        { "slug": "bone", "color": "#CFC5AE", "name": "Bone" },
-        { "slug": "ash", "color": "#948B78", "name": "Ash" },
-        { "slug": "gold", "color": "#D4942F", "name": "Gold" },
-        { "slug": "brass", "color": "#A8721F", "name": "Brass" },
-        { "slug": "blaze", "color": "#E3411B", "name": "Blaze Orange" }
+        {
+          "slug": "black",
+          "color": "#EDE2C8",
+          "name": "Paper (page background)"
+        },
+        {
+          "slug": "coal",
+          "color": "#F6EEDA",
+          "name": "Card"
+        },
+        {
+          "slug": "iron",
+          "color": "#E3D6B6",
+          "name": "Sand"
+        },
+        {
+          "slug": "smoke",
+          "color": "#17130F",
+          "name": "Ink line"
+        },
+        {
+          "slug": "cream",
+          "color": "#17130F",
+          "name": "Ink (headings)"
+        },
+        {
+          "slug": "bone",
+          "color": "#2A231B",
+          "name": "Body text"
+        },
+        {
+          "slug": "ash",
+          "color": "#6A5E4C",
+          "name": "Muted text"
+        },
+        {
+          "slug": "gold",
+          "color": "#BF3A12",
+          "name": "Poster red"
+        },
+        {
+          "slug": "brass",
+          "color": "#C98A1E",
+          "name": "Gold"
+        },
+        {
+          "slug": "blaze",
+          "color": "#D2401C",
+          "name": "Blaze orange"
+        }
       ]
     },
     "spacing": {
-      "units": ["px", "rem", "%", "vh", "vw"],
+      "units": [
+        "px",
+        "rem",
+        "%",
+        "vh",
+        "vw"
+      ],
       "defaultSpacingSizes": false,
       "spacingSizes": [
-        { "slug": "10", "size": "0.5rem", "name": "XXS" },
-        { "slug": "20", "size": "1rem", "name": "XS" },
-        { "slug": "30", "size": "clamp(1.25rem, 3vw, 2rem)", "name": "S" },
-        { "slug": "40", "size": "clamp(1.75rem, 4vw, 3rem)", "name": "M" },
-        { "slug": "50", "size": "clamp(2.5rem, 6vw, 4.5rem)", "name": "L" },
-        { "slug": "60", "size": "clamp(3.25rem, 8vw, 6rem)", "name": "XL" }
+        {
+          "slug": "10",
+          "size": "0.5rem",
+          "name": "XXS"
+        },
+        {
+          "slug": "20",
+          "size": "1rem",
+          "name": "XS"
+        },
+        {
+          "slug": "30",
+          "size": "clamp(1.25rem, 3vw, 2rem)",
+          "name": "S"
+        },
+        {
+          "slug": "40",
+          "size": "clamp(1.75rem, 4vw, 3rem)",
+          "name": "M"
+        },
+        {
+          "slug": "50",
+          "size": "clamp(2.5rem, 6vw, 4.5rem)",
+          "name": "L"
+        },
+        {
+          "slug": "60",
+          "size": "clamp(3.25rem, 8vw, 6rem)",
+          "name": "XL"
+        }
       ]
     },
     "typography": {
@@ -39,62 +112,247 @@
       "defaultFontSizes": false,
       "fontFamilies": [
         {
-          "slug": "display", "name": "Big Shoulders Display (headings)",
-          "fontFamily": "\"Big Shoulders Display\", Impact, \"Arial Narrow\", sans-serif",
-          "fontFace": [ { "fontFamily": "Big Shoulders Display", "fontWeight": "100 900", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/big-shoulders-display-100-900.woff2"] } ]
-        },
-        {
-          "slug": "script", "name": "Yellowtail (script accent)",
-          "fontFamily": "\"Yellowtail\", \"Brush Script MT\", cursive",
-          "fontFace": [ { "fontFamily": "Yellowtail", "fontWeight": "400", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/yellowtail-400.woff2"] } ]
-        },
-        {
-          "slug": "body", "name": "Barlow (body)",
-          "fontFamily": "\"Barlow\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "slug": "display",
+          "name": "Alfa Slab One (headings)",
+          "fontFamily": "\"Alfa Slab One\", Rockwell, \"Roboto Slab\", Georgia, serif",
           "fontFace": [
-            { "fontFamily": "Barlow", "fontWeight": "400", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/barlow-400.woff2"] },
-            { "fontFamily": "Barlow", "fontWeight": "500", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/barlow-500.woff2"] },
-            { "fontFamily": "Barlow", "fontWeight": "600", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/barlow-600.woff2"] },
-            { "fontFamily": "Barlow", "fontWeight": "700", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/barlow-700.woff2"] }
+            {
+              "fontFamily": "Alfa Slab One",
+              "fontWeight": "100 900",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/alfa-slab-one-400.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "rye",
+          "name": "Rye (poster accent)",
+          "fontFamily": "\"Rye\", \"Alfa Slab One\", Georgia, serif",
+          "fontFace": [
+            {
+              "fontFamily": "Rye",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/rye-400.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "script",
+          "name": "Yellowtail (script accent)",
+          "fontFamily": "\"Yellowtail\", \"Brush Script MT\", cursive",
+          "fontFace": [
+            {
+              "fontFamily": "Yellowtail",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/yellowtail-400.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "body",
+          "name": "Courier Prime (body)",
+          "fontFamily": "\"Courier Prime\", \"Courier New\", Courier, monospace",
+          "fontFace": [
+            {
+              "fontFamily": "Courier Prime",
+              "fontWeight": "400 500",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/courier-prime-400.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Courier Prime",
+              "fontWeight": "600 700",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/courier-prime-700.woff2"
+              ]
+            }
           ]
         }
       ],
       "fontSizes": [
-        { "slug": "small", "size": "0.9rem", "name": "Small", "fluid": false },
-        { "slug": "medium", "size": "1.0625rem", "name": "Body", "fluid": false },
-        { "slug": "large", "size": "1.25rem", "name": "Large", "fluid": { "min": "1.125rem", "max": "1.3rem" } },
-        { "slug": "x-large", "size": "2rem", "name": "Heading S", "fluid": { "min": "1.6rem", "max": "2rem" } },
-        { "slug": "xx-large", "size": "3.25rem", "name": "Heading M", "fluid": { "min": "2.25rem", "max": "3.25rem" } },
-        { "slug": "huge", "size": "5.5rem", "name": "Heading L", "fluid": { "min": "3rem", "max": "5.5rem" } }
+        {
+          "slug": "small",
+          "size": "0.9rem",
+          "name": "Small",
+          "fluid": false
+        },
+        {
+          "slug": "medium",
+          "size": "1rem",
+          "name": "Body",
+          "fluid": false
+        },
+        {
+          "slug": "large",
+          "size": "1.15rem",
+          "name": "Large",
+          "fluid": {
+            "min": "1.05rem",
+            "max": "1.15rem"
+          }
+        },
+        {
+          "slug": "x-large",
+          "size": "1.6rem",
+          "name": "Heading S",
+          "fluid": {
+            "min": "1.3rem",
+            "max": "1.6rem"
+          }
+        },
+        {
+          "slug": "xx-large",
+          "size": "2.9rem",
+          "name": "Heading M",
+          "fluid": {
+            "min": "1.9rem",
+            "max": "2.9rem"
+          }
+        },
+        {
+          "slug": "huge",
+          "size": "4.2rem",
+          "name": "Heading L",
+          "fluid": {
+            "min": "2.3rem",
+            "max": "4.2rem"
+          }
+        }
       ]
     }
   },
   "styles": {
-    "color": { "background": "var(--wp--preset--color--black)", "text": "var(--wp--preset--color--bone)" },
-    "typography": { "fontFamily": "var(--wp--preset--font-family--body)", "fontSize": "var(--wp--preset--font-size--medium)", "lineHeight": "1.6" },
-    "spacing": { "blockGap": "1.25rem", "padding": { "left": "var(--wp--preset--spacing--30)", "right": "var(--wp--preset--spacing--30)" } },
+    "color": {
+      "background": "var(--wp--preset--color--black)",
+      "text": "var(--wp--preset--color--bone)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--body)",
+      "fontSize": "var(--wp--preset--font-size--medium)",
+      "lineHeight": "1.6"
+    },
+    "spacing": {
+      "blockGap": "1.25rem",
+      "padding": {
+        "left": "var(--wp--preset--spacing--30)",
+        "right": "var(--wp--preset--spacing--30)"
+      }
+    },
     "elements": {
-      "heading": { "typography": { "fontFamily": "var(--wp--preset--font-family--display)", "fontWeight": "900", "lineHeight": "0.98", "textTransform": "uppercase", "letterSpacing": "0.01em" }, "color": { "text": "var(--wp--preset--color--cream)" } },
-      "h1": { "typography": { "fontSize": "var(--wp--preset--font-size--huge)" } },
-      "h2": { "typography": { "fontSize": "var(--wp--preset--font-size--xx-large)" } },
-      "h3": { "typography": { "fontSize": "var(--wp--preset--font-size--x-large)" } },
-      "h4": { "typography": { "fontSize": "1.35rem", "letterSpacing": "0.04em" } },
-      "link": { "color": { "text": "var(--wp--preset--color--gold)" }, ":hover": { "color": { "text": "var(--wp--preset--color--cream)" } } },
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--display)",
+          "fontWeight": "400",
+          "lineHeight": "1",
+          "textTransform": "uppercase",
+          "letterSpacing": "0"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--cream)"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--huge)"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--xx-large)"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--x-large)"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontSize": "1.05rem",
+          "letterSpacing": "0.06em"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--gold)"
+        },
+        ":hover": {
+          "color": {
+            "text": "var(--wp--preset--color--cream)"
+          }
+        }
+      },
       "button": {
-        "color": { "background": "var(--wp--preset--color--gold)", "text": "var(--wp--preset--color--black)" },
-        "typography": { "fontFamily": "var(--wp--preset--font-family--display)", "fontWeight": "800", "fontSize": "1.1rem", "textTransform": "uppercase", "letterSpacing": "0.07em", "lineHeight": "1" },
-        "border": { "radius": "2px", "width": "0" },
-        "spacing": { "padding": { "top": "0.95rem", "bottom": "0.95rem", "left": "1.6rem", "right": "1.6rem" } },
-        ":hover": { "color": { "background": "var(--wp--preset--color--cream)", "text": "var(--wp--preset--color--black)" } }
+        "color": {
+          "background": "var(--wp--preset--color--gold)",
+          "text": "var(--wp--preset--color--black)"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--display)",
+          "fontWeight": "400",
+          "fontSize": "0.95rem",
+          "textTransform": "uppercase",
+          "letterSpacing": "0.1em",
+          "lineHeight": "1"
+        },
+        "border": {
+          "radius": "0"
+        },
+        "spacing": {
+          "padding": {
+            "top": "0.95rem",
+            "bottom": "0.95rem",
+            "left": "1.6rem",
+            "right": "1.6rem"
+          }
+        },
+        ":hover": {
+          "color": {
+            "background": "var(--wp--preset--color--cream)",
+            "text": "var(--wp--preset--color--black)"
+          }
+        }
       }
     },
     "blocks": {
-      "core/navigation": { "typography": { "fontFamily": "var(--wp--preset--font-family--display)", "fontWeight": "800", "fontSize": "1.15rem", "textTransform": "uppercase", "letterSpacing": "0.08em" } }
+      "core/navigation": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--display)",
+          "fontWeight": "400",
+          "fontSize": "0.95rem",
+          "textTransform": "uppercase",
+          "letterSpacing": "0.12em"
+        }
+      }
     }
   },
   "templateParts": [
-    { "name": "header", "title": "Header", "area": "header" },
-    { "name": "footer", "title": "Footer", "area": "footer" }
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
   ],
   "customTemplates": []
 }
