@@ -288,7 +288,7 @@ function bcc_seed( $demo = false ) {
 	kses_remove_filters();
 
 	if ( ! get_option( 'bcc_email' ) ) {
-		update_option( 'bcc_email', 'beercitycycyles@gmail.com' );
+		update_option( 'bcc_email', 'beercitycycycles@gmail.com' );
 	}
 	if ( ! get_option( 'bcc_instagram' ) ) {
 		update_option( 'bcc_instagram', 'https://www.instagram.com/beercitycycles/' );
