@@ -44,7 +44,7 @@
 
 <!-- wp:group {"align":"full","className":"bcc-strip","layout":{"type":"constrained","contentSize":"1240px"}} -->
 <div class="wp-block-group alignfull bcc-strip"><!-- wp:paragraph {"className":"bcc-strip-text"} -->
-<p class="bcc-strip-text"><b>Ride it in.</b> <span>★</span> <b>Park it.</b> <span>★</span> <b>Grab a plate.</b> <span>★</span> <b>Stay for one more.</b></p>
+<p class="bcc-strip-text"><b>Ride it in.</b> <span>★</span> <b>Park it.</b> <span>★</span> <b>Grab a beer.</b> <span>★</span> <b>Stay for one more.</b></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
